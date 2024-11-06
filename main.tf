@@ -16,10 +16,6 @@ data "aws_ami" "app_ami" {
 
 
 
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "5.15.0"
-}
 
 data "aws_vpc" "default"{
   default = true 
